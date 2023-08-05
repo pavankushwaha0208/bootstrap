@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.imgo {
+   width: 250px;
+
+}
+.btn1{
+    color: white;
+    background-image: linear-gradient(to right, rgb(129,22,193),rgb(198,31,146));
+    width:90px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 40px;
+    
+}
+.reg{
+    background-color:rgb(103,19,210);
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 300px;
+} 
+.pavan{
+    background-color: aqua;
+}
