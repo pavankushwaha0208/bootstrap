@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    div{
+        height: 300px;
+        width: 300px;
+        border: 1px solid;
+        margin : 20px 50px;
+        overflow: hidden;
+    }
+    input{
+        margin-left: 10px;
+        padding: 10px;
+        width: 200px;
+    }
+    label {
+        font-size: 40px;
+        margin-left:10px ;
+        
+    }
+</style>
+
+</head>
+<body>
+    <h1>pavan kumar kushwaha</h1>
+    <div>
+    </div>
+    <label for=""> Text :</label>
+   <input type="text"/>
+
+
+   <script>
+   let  box = document.querySelector("div");
+   let input = document.querySelector("input");
+   let h1 = document.querySelector("h1")
+
+   input.addEventListener ( "input", () => {
+      box.style.borderRadius = input.value;
+      box.style.background = input.value;
+      h1.style.color = input.value;
+      
+      
+   } );
+
+
+
+   </script>
+</body>
+</html>
