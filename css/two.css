@@ -29,4 +29,5 @@
 }
 .coverphoto:hover{
      filter:sepia(50%);
+     transition: all ease 1s;
 }
