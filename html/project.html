@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/project.css">
+</head>
+<body>
+      
+        <h1>pavan kushwaha</h1>
+
+        <div class="main">
+        <div class="button" id="grey"></div>
+        <div class="button" id="red"></div>
+        <div class="button" id="blue"></div>
+        <div class="button" id="pink"></div>
+        <div class="button" id="green"></div>
+        <div class="button" id="purple"></div>
+        <div class="button" id="gold"></div>
+        <div class="button" id="black"></div>
+        </div>
+
+
+
+  <script>
+    const buttons = document.querySelectorAll(".button");
+    const body = document.querySelector("body");
+    buttons.forEach((utton) => {
+      
+      utton.addEventListener("click", (e) => {
+        if(e.target.id=== "grey"){
+            body.style.backgroundColor = "grey"
+        }
+        if(e.target.id === "red"){
+            body.style.backgroundColor = "red"
+        }
+        if(e.target.id=== "blue"){
+            body.style.backgroundColor = "blue"
+        }
+        if(e.target.id === "black"){
+            body.style.backgroundColor = "black"
+        }
+        if(e.target.id === "purple"){
+            body.style.backgroundColor = "purple"
+        }
+        if(e.target.id === "pink"){
+            body.style.backgroundColor = "pink"
+        }
+        if(e.target.id === "green"){
+            body.style.backgroundColor = "green"
+        }
+        if(e.target.id === "gold"){
+            body.style.backgroundColor = "gold"
+        }
+
+      })
+
+
+    });
+
+
+
+
+  </script>
+    
+</body>
+</html>
