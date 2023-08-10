@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .main{
+        height: 200px;
+        width: 400px;
+        background-color: aquamarine;
+        text-align: center;
+       
+     }
+     .inp{
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 25px;
+        width: 200px;
+        margin: 10px;
+     }
+     h3{
+        margin: 20px;
+     }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+      <div class="one">
+        <h3>CM</h3>
+        <input type="number" id="cm" class="inp">
+      </div>
+      <div class="two">
+        <h3>FOOT</h3>
+        <input type="number" id="foot" class="inp">
+      </div>
+    </div>
+<script>
+        var cm = document.getElementById("cm");
+        var foot = document.getElementById("foot");
+
+      //  logic
+
+     cm.addEventListener("input", function(){
+      let a = cm.value;
+      let ss =a/ 30.48;
+      if(!Number.isInteger(foot)){
+        ss=ss.toFixed(2);
+      }
+      foot.value = ss;
+
+     }) 
+     foot.addEventListener("input", function(){
+      let b = foot.value;
+      let bs = 30.48*b;
+      if(!Number.isInteger(cm)){
+        bs=bs.toFixed(2);
+      }
+      cm.value = bs;
+
+     }) 
+
+
+</script>
+</body>
+</html>
