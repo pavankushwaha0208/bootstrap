@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 500px;
+        }
+        .main{
+            border: 2px solid gray;
+            width: 500px;
+            height: 200px;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+
+        }
+        .cala{
+            height:30px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+        }
+        .fah{
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="c">
+            <label for="">Celsius :</label>
+        <input type="number" value="0" id="cal" class="cala">
+        </div>
+        <div class="f">
+            <label for="">Celsius :</label>
+        <input type="number" value="32" id="fa" class="fah">
+        </div>
+    </div>
+
+    <script>
+       var cal = document.getElementById("cal");
+       var fa =  document.getElementById("fa");
+
+       cal.addEventListener("input" ,function() {
+        let c = this.value;
+        let f = (c * 9/5) + 32;
+        if(!Number.isInteger(f)){
+            f = f.toFixed(1);
+
+        }
+        fa.value = f;
+
+        
+       });
+       fa.addEventListener("input" ,function () {
+        let ca = this.value;
+        let caa = (ca - 32) * 5/9;
+        if(!Number.isInteger(caa)){
+            caa = caa.toFixed(1);
+            
+        }
+        cal.value = caa;
+        
+       });
+
+
+    </script>
+</body>
+</html>
