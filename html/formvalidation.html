@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: blue;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+
+        }
+
+        #container {
+            background-color: beige;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .inp {
+            /* margin: 10px; */
+            padding: 10px;
+            border: none;
+            outline: none;
+            width: 200px;
+
+        }
+
+        p {
+            text-align: start;
+            color: red;
+        }
+
+        .submit {
+            width: 220px;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h2>login</h2>
+        <form action="" onsubmit="return onvalid()">
+            <input type="text" placeholder="user name" id="username" class="inp">
+            <p id="onep"></p><br>
+            <input type="password" placeholder=" password" id="password" class="inp">
+            <p id="twop"></p><br>
+            <input type="submit" class="submit">
+        </form>
+    </div>
+
+    <script>
+
+        let username = document.getElementById("username");
+        let password = document.getElementById("password");
+        let flag = 1;
+        function onvalid() {
+            if (username.value == "") {
+                document.getElementById("onep").innerHTML = "khali";
+                flag = 0;
+            } else if (username.value.length < 6) {
+                document.getElementById("onep").innerHTML = "6 charect hona chiye";
+                flag = 0;
+            } else {
+                document.getElementById("onep").innerHTML = "";
+                flag = 1;
+            }
+            if (password.value == "") {
+                document.getElementById("twop").innerHTML = "khali";
+                flag = 0;
+            } else if (password.value.length < 6) {
+                document.getElementById("twop").innerHTML = "6 charect hona chiye";
+                flag = 0;
+            } else {
+                document.getElementById("twop").innerHTML = "";
+                flag = 1;
+            }
+            // return false;
+            if (flag) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

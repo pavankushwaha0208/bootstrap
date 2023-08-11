@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo" style="background-color: aqua;">
+        <h3>pavan</h3>
+        <h3>kumar</h3>
+        <h3>kushwaha</h3>
+    </div>
+
+    <script>
+        let div = document.getElementById("demo");
+        let ab = "<h1>Pavan</h1>";
+        let ae = "<h1>Pavan 1</h1>";
+        let be = "<h1>Pavan 2</h1>";
+        let bb = "<h1>Pavan 3</h1>";
+
+
+        div.insertAdjacentHTML("afterbegin",ab)
+        div.insertAdjacentHTML("afterend", ae)
+        div.insertAdjacentHTML("beforeend",be)
+        div.insertAdjacentHTML("beforebegin",bb)
+
+    </script>
+</body>
+
+</html>
