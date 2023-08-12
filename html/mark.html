@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body style="background-color: #dada !important;">
+    <div class="container fw-bold">
+        <div class="row">
+            <div class="col-8 m-auto bg-dark text-white p-4">
+                <h4 class="text-center">Grade calculating Systam</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8  m-auto bg-white p-5 d-flex justify-content-around">
+                <div class="col-md-4">
+                    <form action="#">
+                        <div class="book1 mb-3">
+                            <label for="">Hindi:</label>
+                            <input class="form-control" id="hindi" type="number" placeholder="marks">
+                        </div>
+                        <div class="book2 mb-3">
+                            <label for="">English:</label>
+                            <input class="form-control" id="english" type="number" placeholder="marks">
+                        </div>
+                        <div class="book3 mb-3">
+                            <label for="">Mathe:</label>
+                            <input class="form-control" id="mathe" type="number" placeholder="marks">
+                        </div>
+                        <div class="book4 mb-3">
+                            <label for="">Physics:</label>
+                            <input class="form-control" id="physics" type="number" placeholder="marks">
+                        </div>
+                        <div class="book5 mb-3">
+                            <label for="">Chemisty:</label>
+                            <input class="form-control" id="chemisty" type="number" placeholder="marks">
+                        </div>
+                        <div><button class="btn btn-warning" onclick="return pavan()">Calculate</button></div>
+                        </form>
+                        </div>
+                        <table>
+                        <tr>
+                            <td>Total mark:</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>Obtained mark :</td>
+                            <td id="tota"></td>
+                        </tr>
+                        <tr>
+                            <td>Persenteg: </td>
+                            <td id="per"></td>
+                        </tr>
+                        <tr>
+                            <td>Remarks:</td>
+                            <td id="Grede"></td>
+                        </tr>
+                        <tr>
+                            <td>Grede:</td>
+                            <td id="rm"></td>
+                        </tr>
+                        </table>
+                </div>
+                <div class="col-8">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/js/mark.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

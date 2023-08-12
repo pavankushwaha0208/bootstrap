@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #display{
+            padding:  15px;
+            outline: none;
+            border-radius: 10px;
+            font-size: 25px;
+            margin-top: 20px;
+            width: 290px;
+            background-color: aqua;
+        }
+        button{
+            padding: 20px;
+            font-size: 30px;
+            margin: 10px;
+            width: 60px;
+            background-color: rgb(4, 218, 233);
+            border-radius: 10px;
+
+        }
+        caption{
+            background-color: #FB9C74;
+            color: rgb(89, 89, 126);
+            border-radius: 20px 20px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cal">
+        
+        <table style="border: 1px solid grey; background-color: #FB9C74;border-radius: 0 0 20px 20px;">
+            <caption><h1>Calculater</h1></caption>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="display" readonly>
+                </td>
+             </tr>
+             <tr>
+               <td> <button onclick="pavan('7')">7</button></td>
+               <td> <button onclick="pavan('8')">8</button></td>
+               <td> <button onclick="pavan('9')">9</button></td>
+               <td> <button onclick="pavan('/')">÷</button></td>
+             </tr>
+             <tr>
+               <td> <button onclick="pavan('4')">4</button></td>
+               <td> <button onclick="pavan('5')">5</button></td>
+               <td> <button onclick="pavan('6')">6</button></td>
+               <td> <button onclick="pavan('*')">×</button></td>
+             </tr>
+             <tr>
+               <td> <button onclick="pavan('1')">1</button></td>
+               <td> <button onclick="pavan('2')">2</button></td>
+               <td> <button onclick="pavan('3')">3</button></td>
+               <td> <button onclick="pavan('-')">-</button></td>
+             </tr>
+             <tr>
+               <td> <button onclick="calcu('=')">=</button></td>
+               <td> <button onclick="pavan('0')">0</button></td>
+               <td> <button onclick="cleardiplay('C')">C</button></td>
+               <td> <button onclick="pavan('+')">+</button></td>
+             </tr>
+        </table>
+
+    </div>
+    <script>
+        let displaycler =  "";
+        function pavan(value){
+            displaycler += value
+            document.getElementById("display").value = displaycler
+
+        }
+        function cleardiplay() {
+            document.getElementById("display").value = "";
+            displaycler = ""
+        }
+        function calcu(){
+            try{
+                let abc = eval(displaycler) ;
+                document.getElementById("display").value = abc;
+            }catch(error){
+                document.getElementById("display").value = "Error"
+            }
+        }
+    </script>
+</body>
+</html>
