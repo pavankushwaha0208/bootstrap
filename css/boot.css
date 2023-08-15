@@ -9,22 +9,100 @@ html,body {
 }
 .logo{
     width: 12vw;
+    margin-left: 21px;
+    margin-top: -5px;
 }
-.main{
-      height: inherit;
-      background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
-      background-color:rgb(29, 23, 23);
-      background-size: cover;
-     background-repeat: no-repeat;
-      
+.select1{
+    border: 2px solid black;
+    width: 118px;
+    height: 35px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 25px;
+    background-color: transparent;
+    color: white;
+    border-color: rgb(201, 209, 216);
+}
+.btn1{
+   margin-top: 25px;
+   height: 36px;
+   width: 90px;
+   text-align: center;
+   padding: 5px;
+   /* border-color: wheat; */
+}
+.heding1{
+    font-size: 47px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 13vw;
+}
+#enter-email{
+    padding: 15px;
+    width: 28vw;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: rgb(201, 209, 216);
+
+}
+#enter-email::placeholder{
+    color: white;
+}
+.btn2{
+    padding: 13px;
+    width: 13vw;
+    font-weight: 600;
+    font-size: 20px;
+}
+.background{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
-@media (max-width: 768px) {
+/* mobail */
+@media (max-width: 767px) {
     .logo{
-        width: 25vw;
+        width: 105px;
+        margin: 15px 0px 0px 0px;     
     }
-    .main{
-        height: 90%;
+    .heding1{
+        font-size: 26px;
+        font-weight: 600;
+    
     }
+    .btn1{
+       width: 65px;
   }
+  .select1{
+    width: 110px;
+  }
+  .heading2{
+   font-size: 5vw !important;
+   
+  }
+  .p1{
+       font-weight: 400;
+       font-size: 20px !important;
+  }
+  #enter-email{
+    margin-left: 40px;
+    width: 60vw;
+    padding: 7px;
+    display: block;
+  }
+  .btn2{
+    height: 40px;
+    width: 120px;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
   
+  /*(typically tablets) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+  }
